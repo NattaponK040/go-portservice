@@ -1,4 +1,4 @@
-FROM golang:1.16.5 as build
-COPY . /app
-WORKDIR /app
+FROM golang:1.16.5
+COPY . /go-portfolio-service
+WORKDIR /go-portfolio-service
 RUN go build -o /go-portfolio-service .
